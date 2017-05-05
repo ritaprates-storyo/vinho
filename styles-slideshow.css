@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'arquitecta-book';
+    src: url('fonts/arquitecta_w00_book-webfont.woff2') format('woff2'),
+         url('fonts/arquitecta_w00_book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'arquitecta-regular';
+    src: url('fonts/arquitecta_w01_lt-webfont.woff2') format('woff2'),
+         url('fonts/arquitecta_w01_lt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* Set height to 100% for body and html to enable the background image to cover the whole page: */
+body, html {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+     
+}
+
+
+
+
+.bgimg {
+    /* Background image */
+    
+    /* Full-screen */
+ 
+    height: 100vh;
+     /* border: 15px solid #295d8d; */
+    border: 15px solid #ffffff;
+  box-sizing: border-box;
+    
+    /* Center the background image */
+    background-position: center;
+    /* Scale and zoom in the image */
+    background-size: cover;
+    /* Add position: relative to enable absolutely positioned elements inside the image (place text) */
+    position: relative;
+    /* Add a white text color to all elements inside the .bgimg container */
+    color: white;
+    /* Add a font */
+    font-family: "Courier New", Courier, monospace;
+    /* Set the font-size to 25 pixels */
+    font-size: 25px;
+}
+
+/* Position text in the top-left corner */
+.topleft {
+    position: absolute;
+    top: 0;
+    left: 16px;
+}
+
+/* Position text in the bottom-left corner */
+.bottomleft {
+    position: absolute;
+    bottom: 0;
+    left: 16px;
+}
+
+/* Position text in the middle */
+.middle {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+#logo-center {
+    
+    width: 40%;
+    min-width: 350px;
+    max-width: 500px;
+}
+
+/* Style the <hr> element */
+hr {
+    margin: auto;
+    width: 40%;
+}
+
+
+.slide1,.slide2,.slide3,.slide4,.slide5 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.slide1 {
+  background: url("4-black.png") no-repeat center;
+      background-size: cover;
+    animation:fade 35s infinite;
+-webkit-animation:fade 35s infinite;
+
+} 
+.slide2 {
+  background: url("1-black.png") no-repeat center;
+      background-size: cover;
+    animation:fade2 35s infinite;
+-webkit-animation:fade2 35s infinite;
+}
+.slide3 {
+    background: url("2-black.png") no-repeat center;
+      background-size: cover;
+    animation:fade3 35s infinite;
+-webkit-animation:fade3 35s infinite;
+}
+
+.slide4 {
+  background: url("3-black.jpg") no-repeat center;
+      background-size: cover;
+    animation:fade4 35s infinite;
+-webkit-animation:fade4 35s infinite;
+    
+}
+
+.slide5 {
+    background: url("4-black.png") no-repeat center;
+      background-size: cover;
+    animation:fade5 35s infinite;
+-webkit-animation:fade5 35s infinite;
+}
+
+
+
+@keyframes fade
+{
+  0%   {opacity:1}
+  25% { opacity: 0}
+  50% { opacity: 0}
+  75% { opacity: 0}
+  100% { opacity: 1}
+}
+@keyframes fade2
+{
+  0%   {opacity:0}
+  25% { opacity: 1}
+  50% { opacity: 0}
+  75% { opacity: 0}
+  100% { opacity: 0}
+}
+@keyframes fade3
+{
+  0%   {opacity:0}
+  25% { opacity: 0}
+  50% { opacity: 1}
+  75% { opacity: 0}
+  100% { opacity: 0}
+}
+
+@keyframes fade4
+{
+  0%   {opacity:0}
+  25% { opacity: 0}
+  50% { opacity: 0}
+  75% { opacity: 1}
+  100% { opacity: 0}
+}
+
+@keyframes fade5
+{
+  0%   {opacity:0}
+  25% { opacity: 0}
+  50% { opacity: 0}
+  75% { opacity: 0}
+  100% { opacity: 1}
+}
+
+
+#contact {
+    position: relative;
+    width: 100%;
+    font-family: 'arquitecta-book';
+    font-size: 2vw;
+    color: #ffffff;
+    letter-spacing: 3px;
+    
+}
+
+#contact a{
+    
+    text-decoration: none;
+    color:#ffffff;
+}
+
+#contact a:hover{
+    
+    color: #bbbbbb;
+}
+
+@media (max-width:600px) {
+    
+    #contact {
+        
+        font-size: 3vw;
+    }
+}
+
+
+@media (min-width: 1280px) {
+    
+    #contact {
+        
+        font-size: 19pt;
+        
+    }
+}
